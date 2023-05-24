@@ -1,3 +1,52 @@
+# Project Setup
+
+### Deploying Project to an Authorized Salesforce Org
+
+1. **Open the command line interface**
+   
+   Launch your preferred command line interface (CLI) tool.
+   
+
+2. **Navigate to the project directory**
+
+   Using the CLI, navigate to the directory where Salesforce project is located.
+   
+
+3. **Authenticate with Salesforce CLI**
+   
+   ```
+   sfdx force:auth:web:login
+   ```
+
+   This command will open a browser window for you to log in and authorize the CLI with your Salesforce org.
+   
+
+4. **Deploy the project**
+   
+   ```
+   sfdx force:source:deploy
+   ```
+
+
+5. **Monitor the deployment process**
+   
+   Monitor the CLI's progress and review any errors or warnings encountered during deployment.
+   
+
+6. **Verify the changes**
+   
+   Verify the changes in your Salesforce org to ensure that the new code has been successfully deployed.
+   
+
+### Post Deployment Steps
+
+Make sure that your profile has custom tab settings marked as "Default On".
+
+Go to Setup -> Users -> Select User Profile -> Custom Tab Settings -> Accounts Dashboard = Default On
+
+![image](https://github.com/Chlip/LWC_AccountDashboard/assets/41972411/595bc4d7-020c-48ac-bff6-ac5674b8db8a)
+
+
 ## Components
 
 ### Create Account Component
