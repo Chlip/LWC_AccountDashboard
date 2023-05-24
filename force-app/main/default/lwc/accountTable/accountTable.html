@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Account Table">
+        <div class="slds-p-around_xxx-small">
+            <lightning-button-group>
+                <lightning-button label="View Mode" onclick={switchToViewMode}></lightning-button>
+                <lightning-button label="Edit Mode" onclick={switchToEditMode}></lightning-button>
+            </lightning-button-group>
+
+            <lightning-datatable columns={columns} data={accounts} key-field="Id" onsave={handleSave}
+                draft-values={draftValues} hide-checkbox-column></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

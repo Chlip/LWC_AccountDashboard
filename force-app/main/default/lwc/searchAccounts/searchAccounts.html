@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Search Accounts">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Account Name" value={searchTerm} onchange={handleSearchTermChange}
+                disabled={editModeActive}></lightning-input>
+            <lightning-button label="Search" onclick={searchAccounts} disabled={editModeActive}></lightning-button>
+            <c-account-table if:true={foundAccountsBool} accounts={foundAccounts} onmodechange={handleModeChange}
+                onrefreshdata={handleRefreshData}></c-account-table>
+        </div>
+    </lightning-card>
+</template>
