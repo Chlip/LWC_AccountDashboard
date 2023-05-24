@@ -47,6 +47,8 @@ Go to Setup -> Users -> Select User Profile -> Custom Tab Settings -> Accounts D
 ![image](https://github.com/Chlip/LWC_AccountDashboard/assets/41972411/595bc4d7-020c-48ac-bff6-ac5674b8db8a)
 
 
+# Project Structure
+
 ## Components
 
 ### Create Account Component
